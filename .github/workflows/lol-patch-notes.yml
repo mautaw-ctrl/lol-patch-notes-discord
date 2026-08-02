@@ -29,6 +29,6 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add last_patch.txt
+          git add .github/workflows/last_patch.txt
           git diff --cached --quiet || git commit -m "Update last patch"
           git push
